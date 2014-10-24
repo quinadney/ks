@@ -1,0 +1,20 @@
+<section data-ng-controller="ChaptersController">
+    <div class="row">
+    <div class="page-header">
+        <h1>Chapter 1</h1>
+    </div>
+    <div class="col-md-8 col-md-offset-2">
+        <form ng-submit="addCh1()" ng-if="name">
+        <h3> Once Upon a Time,</h3>
+        <p> 
+        There was a milennial who was very couragous and innovative, named {{name}}. Though {{name}} was very business-forward, {{name}} was no technology guru. While trying to build the company's brand and reputation, {{name}} realized that her computer skills and knowledge were not going to do.
+        
+        <br/><br/>
+
+        The competition's CEO, <input type="text" placeholder="Competitor's Name" data-ng-model="competitor" id="competitor" required>, knew that technology is a major way of attracting customers and establishing validity, so he made sure that his company, <input type="text" placeholder="Competitor's Company" data-ng-model="compCompany" id="compCompany" required>, hired web developers on staff.
+        </p>
+
+        <button type="submit" class="btn btn-default">Next</button>
+        </form>
+    </div>
+</section>

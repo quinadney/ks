@@ -1,0 +1,18 @@
+<section data-ng-controller="ChaptersController">
+    <div class="row">
+    <div class="page-header">
+        <h1>Chapter 4</h1>
+    </div>
+    <div class="col-md-8 col-md-offset-2" ng-if="!companySolution">
+        <p>You have not gotten this far yet!</p>
+    </div>
+    <div class="col-md-8 col-md-offset-2" ng-if="companySolution">
+    <form ng-submit="addCh4()">
+        <p>{{name}} called the Keystoke offices, spoke with Brittney and was connected with someone on staff who was able to write down all of {{company}}'s wants and needs for the project at hand.</p>
+        <p>A couple weeks later, {{name}} received a phonecall from someone at Keystoke to discuss the progress of the project, what the Keystoke team was having trouble with, and where they were going to go with it over the next couple weeks as well. {{name}} appreciated that Keystoke kept him in the loop.</p>
+        <p>Before hanging up the phone and ending the meeting, {{name}} asked if Keystoke would be able to add <input type="text" placeholder="option one" data-ng-model="firstOption" id="firstOption" required>, <input type="text" placeholder="option two" data-ng-model="secondOption" id="secondOption" required>, and <input type="text" placeholder="option three" data-ng-model="thirdOption" id="thirdOption" required> to the project or if this would be too much trouble.</p>
+        <button type="submit" class="btn btn-default">Next</button>
+    </form>
+    </div>
+    </div>
+</section>

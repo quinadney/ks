@@ -1,0 +1,27 @@
+<section data-ng-controller="ChaptersController">
+    <div class="row">
+    <div class="page-header">
+        <h1>Chapter 3</h1>
+    </div>
+    <div class="col-md-8 col-md-offset-2" ng-if="!companySolution">
+        <p>You have not gotten this far yet!</p>
+    </div>
+    <div class="col-md-8 col-md-offset-2" ng-if="friendSolution">
+        <h3>You chose to <em>ask {{friend}} for help</em></h3>
+        <p>{{name}} called {{friend}} to see about getting assistance on a web or mobile soution for {{company}}. {{friend}} agreed to help out, but it would have to fit between his job and his pending open source contributions. {{friend}} was able to create a quick web application for {{name}}, but the user experience was rough at best. You settle on this solution and at least have an online presence, but will seek other solutions down the line.</p>
+        If you would like to see how other options would affect {{company}}, please return to the <a ng-href="/#!/{{chapterId}}/ch2">previous page</a> and try a different solution.
+    </div>
+    <div class="col-md-8" ng-if="generatorSolution">
+        <h3>You chose to use an online generator</h3>
+        <p>{{staff}}, executive assistant, knows a thing or two about an online website generator where he can just drag and drop everything {{company}} could need and not have to hard code it himself, so you have him work on that, as well as maintain his current responsibilities.</p>
+        <p>{{staff}} is working on the site, but cannot figure out why the forms are not submitting information. While trying to figure out the bug, {{staff}} receives a phone call that one of {{name}}'s meetings today would be pushed up an hour. He calls {{name}}, but {{pronoun}} doesn't answer. Then, {{staff}} gets back to the bug, loses track of time, and {{name}} is an hour late to the meeting, firing {{name}}.</p>
+        <p>The website is now half finished and no one else on staff have used a computer outside of email and Microsoft Office. So, it's time to try <a ng-href="/#!/{{chapterId}}/ch2">another solution.</a></p>
+    </div>
+    <div class="col-md-8" ng-if="professionalSolution">
+        <h3>You chose to look for an IT consultant</h3>
+        <p>{{name}} began researching IT consultants to contract out {{company}}'s online presence. {{name}} knows that {{company}} must present themselves in a way that is easy to approach while providing potential customers an opportunity to establish a relationship with {{company}} where both the client and the company's needs are met. {{name}} is looking for a solution that allows them to create their own content, but also rely on ongoing support from a third party in case something breaks.</p>
+        <p>After weeks of having {{staff}} search and present possible solutions, {{name}} decides on <strong>Keystoke</strong>.</p>
+        <a ng-href="/#!/{{chapterId}}/ch4"><button type="submit" class="btn btn-default">Next</button></a>
+    </div>
+    </div>
+</section>

@@ -1,0 +1,15 @@
+<section data-ng-controller="ChaptersController">
+    <div class="row">
+    <div class="page-header">
+        <h1>The End</h1>
+    </div>
+    <div class="col-md-8 col-md-offset-2" ng-if="firstOption">
+        <p>After all the chaos of trying to find a preferrable solution, {{company}} has a working web application on both mobile and web, that makes sure to include {{firstOption}} and {{thirdOption}}.</p>
+
+        <p><strong>Keystoke</strong> saved the day and everyone profitted from the collaboration. <strong>Keystoke</strong> developers polished their skills and learned new tricks, {{name}} got {{company}} online in a professional and meaningful way, and customers of {{company}} were able to learn more about the company and interact with them because of a great user experience.</p>
+
+
+        <button type="submit" ng-click="sendEmail({{name}})" class="btn btn-default">Email Story</button>
+    </div>
+    </div>
+</section>

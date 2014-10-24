@@ -1,0 +1,23 @@
+<section data-ng-controller="ChaptersController">
+    <div class="row">
+    <div class="page-header">
+        <h1>New Chapter</h1>
+    </div>
+    <div class="col-md-8 col-md-offset-2">
+        <form ng-submit="create()">
+        <div><h3> Hello there, </h3>
+        <p> 
+            Thank you for taking this adventure with me. If I may please introduce myself, I am <strong>Garvis</strong> at <em>Keystoke</em>. 
+            <br/><br/> 
+            I am here to tell you a story about a time when Keystoke saved the day. 
+            <br/></br>
+            What is your name? <input type="text" placeholder="name" data-ng-model="name" id="name" required>
+            <br/><br/>
+        </p>
+        <button type="submit" class="btn btn-default">Next</button>
+        </div>
+        <div ng-if="name">Thank you, {{name}}. Now let me tell you a story...</div>
+   </form>
+    </div>
+    </div>
+</section>

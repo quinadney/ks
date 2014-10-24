@@ -1,0 +1,17 @@
+<section data-ng-controller="ChaptersController">
+    <div class="row">
+    <div class="page-header">
+        <h1>Chapter 5</h1>
+    </div>
+    <div class="col-md-8 col-md-offset-2" ng-if="!firstOption">
+        <p>You have not gotten this far yet!</p>
+    </div>
+    <div class="col-md-8 col-md-offset-2" ng-if="firstOption">
+        <p>The Keystoke representative assigned to the project informed {{name}} that, "Adding {{firstOption}} and {{thirdOption}} would not be a problem, but {{secondOption}} would be outside of the pay range you were originally anticipated. We could either discuss other options or leave that one for a later collaboration?"</p>
+        <p>It is not in {{company}}'s budget to add more features to the current plan with Keystoke, so {{name}} decides to have Keystoke create another way to fix the company's problem.</p>
+        <p>Even the web guru, {{friend}}, was happy with the final product from Keystoke and backed up {{name}}'s frequent referrals to other companies who are unable to create their one digital solutions.</p>
+
+        <a ng-href="/#!/{{chapterId}}/final"><button type="submit" class="btn btn-default">Finish Story</button></a>
+    </div>
+    </div>
+</section>
