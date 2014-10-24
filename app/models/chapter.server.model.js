@@ -41,6 +41,10 @@ var ChapterSchema = new Schema({
 		default: '',
 		trim: true
 	},
+	companySolution: {
+		type: String,
+		default: ''
+	},
 	friendSolution: {
 		type: Boolean,
 		default: false,

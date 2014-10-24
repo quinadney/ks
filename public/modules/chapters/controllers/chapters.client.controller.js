@@ -5,7 +5,7 @@ angular.module('chapters').controller('ChaptersController', ['$scope', '$statePa
 	function($scope, $stateParams, $location, Authentication, Chapters, Mailer ) {
 		$scope.chapterId = $stateParams.chapterId;
 
-$scope.chapter = Chapters.get({ 
+	$scope.chapter = Chapters.get({ 
 		chapterId: $stateParams.chapterId
 	}, function(res) {
 		$scope.name = res.name;
